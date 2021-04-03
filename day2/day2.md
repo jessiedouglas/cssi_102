@@ -156,6 +156,7 @@ This starter code can also be found in `starter/part_1/index.html`.
 
 5. Uncomment the `<script>` and `<link>` tags. Then view the refreshed web preview. Give students a chance to inspect the HTML. Solicit predictions on what each class is doing.
 
+- Name that yesterday, you used pre-written CSS provided by your instructor. Today, you're also using pre-written CSS, but written by a team of really generous designers who share their code over a *content delivery network* (or CDN) so that anyone can use these styles. 
 - Explain that linking the Bulma.io CDN in the head of our page provides us with pre-defined CSS classes that we can use to style our page.
 - Talk through the classes and what they are individually doing to style our page.
 
@@ -189,4 +190,4 @@ This starter code can also be found in `starter/part_1/index.html`.
 ### Spicy
 
 - Bulma doesn't have a ton of built-in colors. Modify the colors to match the vibe you want to create with your top 10 list. 
-- Right now, each song is just a single tile. Consider making a separate `.html` page for each of your top 2-5 songs, and then put a link to each on your main page. 
+- Right now, each song is just a single card. Consider making a separate `.html` page for each of your top 2-5 songs, and then put a link to each on your main page. 
