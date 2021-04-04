@@ -22,8 +22,6 @@ In order to demonstrate JavaScript DOM manipulation, we're going to create a vir
 
 ## Starting Code
 
-Note: If nesc.. 
-
 ###### Starting HTML
 ```html
 <!DOCTYPE html>
@@ -110,7 +108,8 @@ Note: If nesc..
         <button id="button4" class="button is-large is-danger">Pet the alligator anyways</button>
       </div>
     </section>
-    <script src="" type="text/javascript" defer></script>
+  </div>
+  <script src="" type="text/javascript" defer></script>
 </body>
 
 </html>
@@ -123,7 +122,7 @@ img {
 }
 ```
 
-###### Starting JS
+###### Starting JavaScript
 ```javascript
 console.log("script running!");
 
