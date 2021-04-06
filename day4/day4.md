@@ -228,4 +228,3 @@ inputField.addEventListener("change", (e) => {
 ### Spicy
 
 - Right now, this is all pretty repetitive. Can you figure out a way to write this as a loop, an array, or an object that could help circumvent the very repetitive if-else tree currently in use?
-- 
