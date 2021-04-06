@@ -1,4 +1,4 @@
-# Title of Project
+# Restaurant Page
 
 1. [Objectives](#objectives)
 2. [What We're Building](#what-were-building)
