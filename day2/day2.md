@@ -156,6 +156,7 @@ This starter code can also be found in `starter/part_1/index.html`.
 
 5. Uncomment the `<script>` and `<link>` tags. Then view the refreshed web preview. Give students a chance to inspect the HTML. Solicit predictions on what each class is doing.
 
+- Name that yesterday, you used pre-written CSS provided by your instructor. Today, you're also using pre-written CSS, but written by a team of really generous designers who share their code over a *content delivery network* (or CDN) so that anyone can use these styles. 
 - Explain that linking the Bulma.io CDN in the head of our page provides us with pre-defined CSS classes that we can use to style our page.
 - Talk through the classes and what they are individually doing to style our page.
 
@@ -177,12 +178,16 @@ This starter code can also be found in `starter/part_1/index.html`.
 
 ### Mild
 
-- Update this list to reflect your top 10 songs. Change the cards to display your favorite songs along with their artists. Make sure to update the cover art as well.
+- Update this list to reflect *your* top 10 songs - you can even switch to a different medium like movies, shows, or tropical fish if you like. Change the cards to display your favorite songs along with their artists. 
+- Update the cover art for each of the songs.
+- Add at least three more songs! You can do even more if you have more songs to add. 
 
 ### Medium
 
 - Try revising the card layout of your Top 10 Page. Instead of a row with three columns, organize your cards into five rows of two columns, or a pyramid shape.
+- On Bulma's documentation, look up at least three components we haven't used yet. Pick the one that seems the most interesting to try to add it in to your site.
 
 ### Spicy
 
-- Add at least one new Bulma component to your layout.
+- Bulma doesn't have a ton of built-in colors. Modify the colors to match the vibe you want to create with your top 10 list. 
+- Right now, each song is just a single card. Consider making a separate `.html` page for each of your top 2-5 songs, and then put a link to each on your main page. 
