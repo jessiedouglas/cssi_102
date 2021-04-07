@@ -124,7 +124,10 @@ NOTE: You can definitely cover this content without getting deep into the theory
 
 The Prelude and Part 1 of this lesson are both meant to support students who haven't covered APIs, and therefore may not have thought about accessing a webpage as a request and response. 
 
-This is one of the longest walkthroughs we've done so far, but it's not actually critically important to move ahead into additional content. If students are in the panic zone, it's entirely possible to skip this discussion of APIs in favor of a much simpler project that reviews content from week 1, or to use this day as a way to jump start week 2 by doing some isolated practice with just command line. 
+This is one of the longest walkthroughs we've done so far, but it's not actually critically important to move ahead into additional content. If students are in the panic zone, it's entirely possible to take one of the following different approaches:
+* Skip this discussion of APIs in favor of a much simpler project that reviews content from week 1.
+* Use this day as a way to jump start week 2 by doing some isolated practice with just command line. 
+* Do *only* Part 1 of this lesson as a way to preview JSON responses, which will be extremely helpful prior knowledge once we retrieve records from Firebase.
 
 ### PRELUDE: What is an API?
 
