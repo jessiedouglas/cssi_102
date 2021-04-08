@@ -64,6 +64,43 @@ NOTE: It's possible that some students might ask about, look up, or even already
 
 ### PART 2: Intro to Firebase and Realtime Database
 
+1. Have students navigate to the Firebase console: `https://console.firebase.google.com/`. Spend some time navigating through the Firebase console and talking students through all that you can do here. Make sure students understand that the Firebase console acts a hub to manage all projects. Firebase comes with a lot of functionality out of the box, but today they'll be focusing on creating a project and implementing a realtime database. 
+
+2. Click "Add Project" and move through the steps to create a new Firebase project.
+
+3. Give the project a name. The name `secret-messaging-app`, or something like it, works great.
+
+4. Enabling Google analytics is unecessary. Leave it unselected for now. 
+
+5. Click "Create Project".
+
+6. After your app has been created and the Firebase console has reloaded, select the project that you've just created.
+
+7. In the left hand menu, select "Realtime Database". Then select "Create Database".
+
+8. Select the default database location. It should be something like `United States (us-central1)`. 
+
+9. Select "test mode", then click enable. Test Mode allows anyone who has the database reference to read and write to our database.
+> **Note:**
+>
+>For now, start in "test mode", to easily read and write to a realtime database without restrictions. Emphasize that in a production app, this is something we'd never want to do, and would implement the appropriate rules. But for learning purposes, test mode will work fine.
+
+10. Explain to students that Firebase structures its reatime data as a JSON tree. When we push new data to our database, Firebase automatically generates unique keys for each item of data. If you and your students did the JService activity yesterday, you can draw parallels here from what you've done previously. 
+
+11. To demonstrate the data we will be writing to/reading from our database, share an example of the data we would store in our Secret Messaging App database.
+
+A single JSON node that represents our data will look like this. Let students know they can add more key/value pairs if they choose.
+```js
+{
+  'uniqueKey': {
+    message: STRING,
+    passcode: STRING
+  }
+}
+```
+
+12. When using the Firebase API to add new records to realtime database, the API automatically generates a unique key for each unit of data. When we manually add records we need to provide our own key. To create a key students should type a unique key as a name, leave the value field blank, then click the "+" sign to add message, passcode, and any additional fields.  
+
 
 ## Extensions for Independent Practice
 
