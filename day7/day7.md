@@ -17,7 +17,7 @@
 
 ## What We're Building
 
-This day is a little different, in that we're setting the stage for a multi-day project with some foundational knowledge. We won't actually be building anything today; just orienting students to two new systems. They'll learn to use the Cloud Shell terminal, and they'll also learn what Firebase is, what the Realtime Database is, and how to interact with a database for a project they create.
+This day is a little different, in that we're setting the stage for a multi-day project with some foundational knowledge. We won't actually be building anything today; just orienting students to two new systems. They'll learn to use the Cloud Shell terminal, and they'll also learn what Firebase is, what the Realtime Database is, and how to use the Firebase console to interact with a database for a project they create.
 
 With that said, unless students know where we're going, it might be important to name for them where we are headed. You may wish to show them the completed week 2 projects from Thursday, or the exemplars from Friday, just so they have some sense of where this is all headed. 
 
