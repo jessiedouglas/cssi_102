@@ -1,4 +1,4 @@
-# Title of Project
+# Firebase Realtime Database: Reading Data and Rendering HTML
 
 1. [Objectives](#objectives)
 2. [What We're Building](#what-were-building)

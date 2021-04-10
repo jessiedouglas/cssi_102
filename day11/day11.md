@@ -1,4 +1,4 @@
-# Firebase Note App
+# Firebase Realtime Database: Authenticating Google Users and Writing to a Database
 
 1. [Objectives](#objectives)
 2. [What We're Building](#what-were-building)

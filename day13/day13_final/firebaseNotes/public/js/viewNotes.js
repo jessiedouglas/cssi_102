@@ -52,7 +52,6 @@ const deleteNote = (noteId) => {
 }
 
 const handleSaveEdit = (noteId) => {
-  // Write the new post's data simultaneously in the posts list and the user's post list.
   const noteTitle = document.getElementById('editTitleInput').value;
   const noteText = document.getElementById('editTextInput').value;
   const noteEdits = {
