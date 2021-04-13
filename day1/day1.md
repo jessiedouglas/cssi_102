@@ -149,17 +149,19 @@ footer {
 
 14. Go and find a suitable image, and paste the url into the image element. 
 
-15. Repeat the previous 3 steps for the next menu item if time allows. If time is short, you can leave it blank, or just place the empty elements inside it for students to populate during independent practice. 
+15. Add an `alt=""` property to the `img` element, and pause here to talk about the importance of accesibility best practices. Encourage students to add an `alt` to every `img` in the course moving forward. 
 
-16. Finally, add a `footer`, add a `p` inside it, and name that we're going to use this opportunity to practice one final and very important tag. We'll use an Anchor Link (or an `a` tag for short) to create a clickable link to take you to another page. The exemplar demos this by linking to an external article about pizza, but you can adjust however you need to. 
+16. Repeat the previous 3 steps for the next menu item if time allows. If time is short, you can leave it blank, or just place the empty elements inside it for students to populate during independent practice. 
 
-17. Encourage students to do something for some brief independent practice. This could be as simple as filling out a menu item, or as complex as revamping the entire restaurant to their own tastes - adjust the scope of this task based on the time you have left in the lesson, but less lecture and more practice is generally better. 
+17. Finally, add a `footer`, add a `p` inside it, and name that we're going to use this opportunity to practice one final and very important tag. We'll use an Anchor Link (or an `a` tag for short) to create a clickable link to take you to another page. The exemplar demos this by linking to an external article about pizza, but you can adjust however you need to. 
 
-18. IF students have asked, use that as a springboard to jump into a very brief explanation and exploration of the CSS. Emphasize that the chunks of code to style an element are called **rulesets** and that each rule in a rulset is made up of two things: a **property** (like background-color) and a **value** like "aliceblue". 
+18. Encourage students to do something for some brief independent practice. This could be as simple as filling out a menu item, or as complex as revamping the entire restaurant to their own tastes - adjust the scope of this task based on the time you have left in the lesson, but less lecture and more practice is generally better. 
 
-19. Demonstrate how to change the color of something by showing the [Google color picker](https://www.google.com/search?q=color+picker) - don't get into the nuances of hex codes or hexadecimal number systems, just name that the color picker gives us at least five different codes for any color we pick. We can use *any* of those codes; we'll start with hex since it's used fairly often. 
+19. IF students have asked, use that as a springboard to jump into a very brief explanation and exploration of the CSS. Emphasize that the chunks of code to style an element are called **rulesets** and that each rule in a rulset is made up of two things: a **property** (like background-color) and a **value** like "aliceblue". 
 
-20. Celebrate! You and your students built a webpage together! Especially if students have had a chance to diverge in the projects they are making, try to reserve some class time to showcase those projects. 
+20. Demonstrate how to change the color of something by showing the [Google color picker](https://www.google.com/search?q=color+picker) - don't get into the nuances of hex codes or hexadecimal number systems, just name that the color picker gives us at least five different codes for any color we pick. We can use *any* of those codes; we'll start with hex since it's used fairly often. 
+
+21. Celebrate! You and your students built a webpage together! Especially if students have had a chance to diverge in the projects they are making, try to reserve some class time to showcase those projects. 
 
 ## Extensions for Independent Practice
 
