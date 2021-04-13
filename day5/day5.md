@@ -21,4 +21,10 @@ Fridays, especially the first and second Fridays of the course, are intentionall
 
 This mini-project sprint that allows them to brainstorm ideas and then try to implement them is one of the best ways to offer a comprehensive review of the topics covered earlier in the week.
 
-That said, if it has become apparent that a specific concept proved more of a stumbling block than was anticipated, and a large subset of students are experiencing difficulty with a topic (e.g. loops, functions, arrays, or OOP), then **if an instructor (Technical Facilitator, Technical Advisor, or Teaching Assistant) wants to offer a review session for that subset of students which covers these topics in a little more detail and formality, the team should try to adjust to make that happen.**
+## Notes on Friday
+
+Fridays, especially the first and second Fridays of the course, are intentionally designed with no new content. These "flex days" are critical for student success - the extra time spent without the addition of new material allows them to deepen their understanding by shifting from cognitive to autonomous performance. 
+
+This mini-project sprint that allows them to brainstorm ideas and then try to implement them is one of the best ways to offer a comprehensive review of the topics covered earlier in the week.
+
+That said, if it has become apparent that a specific concept proved more of a stumbling block than was anticipated, that concept is critical to know moving forward,  and a large subset of students are experiencing difficulty with that topic, then **if an instructor wants to offer a review session for that subset of students which covers these topics in a little more detail and formality, the team should try to adjust to make that happen.**
