@@ -25,6 +25,8 @@ The purpose of this lesson is to build repository to demonstrate Git and Github 
 
 ## Stepped Solution
 
+### Cloning a repository
+
 1.  Spend a few minutes explaining distributed version control to students. Make sure they have a basic grasp of the concept before moving on. 
 
 2. This lesson will dive into Git and Github, but give students a primer by discussing the relationship between the two, and the advantages that they offer developers. 
@@ -42,6 +44,8 @@ git clone [repo url]
 6. Navigate to the newly added local Git repository.
 
 7. Use the command line to a new file in that folder called `README.md`. Have students add some text to the README file and save it. 
+
+### Commit to a local repository
 
 8. Back in the command line, type `git status`. Have students inspect the response. Solicit predictions on what the response from Git is telling us. Then clarify by walking them through the response. Explain that in red, Git is telling us that we have certain files that are not yet being tracked by Git. Pause here to talk about *why* the process for mirroring our local changes on GitHub tend to be so tedious.
       * Ask students how they save work on Google Docs. They'll explain that they don't; Google Docs autosaves.
@@ -78,6 +82,8 @@ password. When entering their password, it won't show up in the terminal, but it
 
 19. After refreshing the GitHub repo page, the newly updated README.md should be visible. Now the remote repository is up to date with the local copy.
 
+### Collaborating through Git branches 
+
 20. Branches are the meat of Git. They allow users to work on different parts of a project together without interfering with each other.
 
 21. As students begin to work on their final projects they will need to collaborate using Git. Describe the following scenario to students. Assume two or more students are working on the same repo together. They want to work on
@@ -97,6 +103,8 @@ different parts of the project at the same time. How can "student A" write her c
 
 26. The command we learned for pushing commits previously was `git push origin master` because we were on the local `master` branch, and we wanted to push it to the remote `master` branch. However, this time, we're on a different branch:
 `readme-about`. To sync their local changes to the remote repo, students should run the command: `git push origin readme-about`.This will save changes to the remote repository's `readme-about` branch.
+
+### Merging a branch and handling conflicts
 
 27. Ask students: The `master` branch is the main branch - so if changes were pushed to a different branch, how can those changes be added to the `master` once it's
 ready?
