@@ -15,9 +15,17 @@ Share the following links with students, to give them a idea of the scope of pro
 * <a href="https://hawaii-travel-site.glitch.me/">Hawai'i Travel Site</a>
 * <a href="https://tokyo-travel-page.glitch.me/">Tokyo Trip Builder</a>
 
-## Pushing Projects to Github
+## Notes on Friday
 
-Students will be using Git Github later in the course to collaborate on their final project. To begin familiarizing them with Git and version control, it is a good idea to begin encouraging them to use it to backup their work. Encourage them to follow this workflow whenever the want to store their work, but particularly on project days.
+Fridays, especially the first and second Fridays of the course, are intentionally designed with no new content. These "flex days" are critical for student success - the extra time spent without the addition of new material allows them to deepen their understanding by shifting from cognitive to autonomous performance. 
+
+This mini-project sprint that allows them to brainstorm ideas and then try to implement them is one of the best ways to offer a comprehensive review of the topics covered earlier in the week.
+
+That said, if it has become apparent that a specific concept proved more of a stumbling block than was anticipated, that concept is critical to know moving forward,  and a large subset of students are experiencing difficulty with that topic, then **if an instructor wants to offer a review session for that subset of students which covers these topics in a little more detail and formality, the team should try to adjust to make that happen.**
+
+## OPTIONAL: Pushing Projects to Github
+
+Students will be using Git Github later in the course to collaborate on their final project. To begin familiarizing them with Git and version control, it is a good idea to begin encouraging them to use it to back up their work. Encourage them to follow this workflow whenever the want to store their work, but particularly on project days. This course will examine GitHub workflows on day 14 (the last day before final projects), but that day will go much more smoothly if students have had some prior exposure. If you do not have time to introduce Git today, please consider finding another to do so - this can work on any day when students have created work they are proud of.
 
 1. Students should log into their Github account. If they don't have one yet, give them a few moments to register an account.
 
@@ -25,8 +33,9 @@ Students will be using Git Github later in the course to collaborate on their fi
 
 3. Give students a moment to step through naming and creating a repository. They can enter a brief description or write a more detailed README later.
 
-4. In the command line, students should initialize Git in their repository. Initializing Git creates a `.git` file in their repo. Though the `.git` file is typically hidden from us, unless we type a special `ls` command to view it, students should be aware that it is there, and it contains all of the information about their repositories history, making version control possible.
-First they'll want  to make sure they are in their project directory, then type `git init`.
+4. In the command line, students should initialize Git in their repository. Initializing Git creates a `.git` file in their repo. Though the `.git` file is typically hidden from us, unless we type a special `ls` command to view it, students should be aware that it is there, and it contains all of the information about their repositories history, making version control possible. First they'll want to make sure they are in their project directory, then type `git init`.
+    * Please note that if students are working in Glitch, the command line / terminal can be accessed by clicking the "tools" button. 
+    * If you are using another environment, you'll want to take a moment before teaching this lesson to confirm that it has a terminal, and that projects can be pushed from that terminal.
 
 5. Students can type `git status` to confirm that Git is initialized in their repository and has awareness of all its contents.
 
@@ -39,10 +48,4 @@ Typing `git status` again will update them with which files have now been staged
 
 9. They have now saved their changes but only locally. To make their remote repository aware of the updates they've made locally, they must push these changes to their remote repository on Github. The command `git push origin master` will send these local changes to the remote repository hosted on Github. Have students refresh their Github repository to verify that their changes have been synced to their remote repository.
 
-## Notes on Friday
 
-Fridays, especially the first and second Fridays of the course, are intentionally designed with no new content. These "flex days" are critical for student success - the extra time spent without the addition of new material allows them to deepen their understanding by shifting from cognitive to autonomous performance. 
-
-This mini-project sprint that allows them to brainstorm ideas and then try to implement them is one of the best ways to offer a comprehensive review of the topics covered earlier in the week.
-
-That said, if it has become apparent that a specific concept proved more of a stumbling block than was anticipated, that concept is critical to know moving forward,  and a large subset of students are experiencing difficulty with that topic, then **if an instructor wants to offer a review session for that subset of students which covers these topics in a little more detail and formality, the team should try to adjust to make that happen.**
