@@ -76,13 +76,13 @@ const editNote = (noteId) => {
 7. For an optimal user experience, it's a good idea to have the text populate the form so that users can easily make their edits. Write out the logic to toggle modal open and populate with note content. 
 ```js
 const editNote = (noteId) => {
-  const editNoteModal = document.getElementById('editNoteModal');
+  const editNoteModal = document.querySelector('#editNoteModal');
   const notesRef = firebase.database().ref(`users/${googleUserId}`);
   notesRef.on('value', (snapshot) => {
     const data = snapshot.val();
     const noteDetails = data[noteId];
-    document.getElementById('editTitleInput').value = noteDetails.title;
-    document.getElementById('editTextInput').value = noteDetails.text;
+    document.querySelector('#editTitleInput').value = noteDetails.title;
+    document.querySelector('#editTextInput').value = noteDetails.text;
 
   });
   editNoteModal.classList.toggle('is-active'); 
@@ -92,23 +92,23 @@ const editNote = (noteId) => {
 8. Add functionality to push edits to the realtime database. Add code to dynamically handle clicking the Save Changes button on the modal. 
 
 ```js
-  const saveEditBtn = document.getElementById('saveEdit');
+  const saveEditBtn = document.querySelector('#saveEdit');
   saveEditBtn.onclick = handleSaveEdit.bind(this, noteId);
 ```
 
 9. The edit `editNote()` function should now look like this:
 ```js
 const editNote = (noteId) => {
-  const editNoteModal = document.getElementById('editNoteModal');
+  const editNoteModal = document.querySelector('#editNoteModal');
   const notesRef = firebase.database().ref(`users/${googleUserId}`);
   notesRef.on('value', (snapshot) => {
     const data = snapshot.val();
     const noteDetails = data[noteId];
-    document.getElementById('editTitleInput').value = noteDetails.title;
-    document.getElementById('editTextInput').value = noteDetails.text;
+    document.querySelector('#editTitleInput').value = noteDetails.title;
+    document.querySelector('#editTextInput').value = noteDetails.text;
 
   });
-  const saveEditBtn = document.getElementById('saveEdit');
+  const saveEditBtn = document.querySelector('#saveEdit');
   saveEditBtn.onclick = handleSaveEdit.bind(this, noteId);
   editNoteModal.classList.toggle('is-active');
 };
@@ -117,8 +117,8 @@ const editNote = (noteId) => {
 10. Write the logic to persist the edit to the database.
 ```js
 const handleSaveEdit = (noteId) => {
-  const noteTitle = document.getElementById('editTitleInput').value;
-  const noteText = document.getElementById('editTextInput').value;
+  const noteTitle = document.querySelector('#editTitleInput').value;
+  const noteText = document.querySelector('#editTextInput').value;
   var noteEdits = {
     title: noteTitle,
     text: noteText
@@ -130,7 +130,7 @@ const handleSaveEdit = (noteId) => {
 11. After submitting edits we'll want to close the modal. Explain to students that it's possible and perfectly valid to define this logic in the `handleSaveEdit()` function. However for the sake of reusability, it is worth defining it as a seperate function. Defining it as it's own function allows us to call it in `handleSaveEdit()` and also trigger it as an event handler when we click the cancel button. 
 ```js
 const closeEditModal = () => {
-  const editNoteModal = document.getElementById('editNoteModal');
+  const editNoteModal = document.querySelector('#editNoteModal');
   editNoteModal.classList.toggle('is-active');
 };
 ```
@@ -139,8 +139,8 @@ const closeEditModal = () => {
 ```js
 // Updated handleSaveEdit 
 const handleSaveEdit = (noteId) => {
-  const noteTitle = document.getElementById('editTitleInput').value;
-  const noteText = document.getElementById('editTextInput').value;
+  const noteTitle = document.querySelector('#editTitleInput').value;
+  const noteText = document.querySelector('#editTextInput').value;
   var noteEdits = {
     title: noteTitle,
     text: noteText
