@@ -18,7 +18,7 @@
 
 ## What We're Building
 
-Over the next few days we'll be building a notes app, similar to Google Keep. Today we'll focus on authenticating Google users through Firbase, and using the Firebase API to write new data to our realtime database. 
+Over the next few days we'll be building a notes app, similar to Google Keep. Today we'll focus on authenticating Google users through Firebase, and using the Firebase API to write new data to our realtime database. 
 
 ## Starting Code
 
@@ -135,7 +135,7 @@ const signIn = () => {
 }
 ```
 
-14. Encourage students to test their code up to this point by running `firebase emulators:start`. Students should be able to simulate logging in through Google and be redirected to another HTML page with a form for creating a note. In the Emulator UI, under the authentication tab, students should be able to see the fake user that we just logged in.
+14. Encourage students to test their code up to this point by stepping through their program so far. Students should be able to simulate logging in through Google and be redirected to another HTML page with a form for creating a note. In the Emulator UI, under the authentication tab, students should be able to see the fake user that we just logged in.
 
 15. Add the logic to write to the database to `writeNote.js`.
 
@@ -238,5 +238,5 @@ The final code for today can be found in `day11/day11_final/firebaseNotes`.
 
 ### Spicy
 
-- Implement an additional sign-in flow. Allow users to choose to sign in via their Google account, or with a username and password. 
+- Implement an additional sign-in flow. Allow users to choose to sign in via their Google account, or with a username and password. This exercise is just for practiceand learning purposes. Keep in mind that in a real-world app you would **NEVER** store passwords as unencrypted strings. Until you have a better understanding of web security in general, it's better to use the authentication flow provided by companies like Google or Facebook when building apps. 
 

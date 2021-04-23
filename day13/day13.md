@@ -31,24 +31,24 @@ The starter code for today can be found in `day13/day13_starter/firebaseNotes`.
 innerHTML +=  `<a id="${noteId}" href="#" class="card-footer-item" onclick="deleteNote(this.id)">Delete</a>`
 ```
 
-2. Write the shell of the function to delete a note.
+3. Write the shell of the function to delete a note.
 ```js
 const deleteNote = (noteId) => {
 
 }
 ```
 
-3. Deleting a note in Firebase RTDB is simple. Just reference that record in the database and call `.remove()` on it. Add this code inside the `deleteNote()` function:
+4. Deleting a note in Firebase RTDB is simple. Just reference that record in the database and call `.remove()` on it. Add this code inside the `deleteNote()` function:
 ```js
 firebase.database().ref(`users/${googleUserId}/${noteId}`).remove();
 ```
 
-4. To update a note, add an edit button to the card footer and add an `onclick` handler, much like the delete button.
+5. To update a note, add an edit button to the card footer and add an `onclick` handler, much like the delete button.
 ```js
 innerHTML +=  `<a id="${noteId}" class="card-footer-item" onclick="editNote(this.id)">Edit</a>`
 ```
 
-5. Add an `editNote()` function:
+6. Add an `editNote()` function:
 ```js
 const editNote = (noteId) => {
   let note = document.getElementById(noteId);
@@ -56,7 +56,7 @@ const editNote = (noteId) => {
 }
 ```
 
-6. In `viewNotes.html` create a modal with a form:
+7. In `viewNotes.html` create a modal with a form:
 ```html
 <div id="editNoteModal" class="modal">
   <div class="modal-background"></div>
@@ -73,7 +73,7 @@ const editNote = (noteId) => {
 </div>
 ```
 
-7. For an optimal user experience, it's a good idea to have the text populate the form so that users can easily make their edits. Write out the logic to toggle modal open and populate with note content. 
+8. For an optimal user experience, it's a good idea to have the text populate the form so that users can easily make their edits. Write out the logic to toggle modal open and populate with note content. 
 ```js
 const editNote = (noteId) => {
   const editNoteModal = document.querySelector('#editNoteModal');
@@ -89,14 +89,14 @@ const editNote = (noteId) => {
 };
 ```
 
-8. Add functionality to push edits to the realtime database. Add code to dynamically handle clicking the Save Changes button on the modal. 
+9. Add functionality to push edits to the realtime database. Add code to dynamically handle clicking the Save Changes button on the modal. 
 
 ```js
   const saveEditBtn = document.querySelector('#saveEdit');
   saveEditBtn.onclick = handleSaveEdit.bind(this, noteId);
 ```
 
-9. The edit `editNote()` function should now look like this:
+10. The edit `editNote()` function should now look like this:
 ```js
 const editNote = (noteId) => {
   const editNoteModal = document.querySelector('#editNoteModal');
@@ -114,7 +114,7 @@ const editNote = (noteId) => {
 };
 ```
 
-10. Write the logic to persist the edit to the database.
+11. Write the logic to persist the edit to the database.
 ```js
 const handleSaveEdit = (noteId) => {
   const noteTitle = document.querySelector('#editTitleInput').value;
@@ -127,7 +127,7 @@ const handleSaveEdit = (noteId) => {
 }
 ```
 
-11. After submitting edits we'll want to close the modal. Explain to students that it's possible and perfectly valid to define this logic in the `handleSaveEdit()` function. However for the sake of reusability, it is worth defining it as a seperate function. Defining it as it's own function allows us to call it in `handleSaveEdit()` and also trigger it as an event handler when we click the cancel button. 
+12. After submitting edits we'll want to close the modal. Explain to students that it's possible and perfectly valid to define this logic in the `handleSaveEdit()` function. However for the sake of reusability, it is worth defining it as a seperate function. Defining it as it's own function allows us to call it in `handleSaveEdit()` and also trigger it as an event handler when we click the cancel button. 
 ```js
 const closeEditModal = () => {
   const editNoteModal = document.querySelector('#editNoteModal');
@@ -135,7 +135,7 @@ const closeEditModal = () => {
 };
 ```
 
-12. The updated `handleSaveEdit()` function should look like this:
+13. The updated `handleSaveEdit()` function should look like this:
 ```js
 // Updated handleSaveEdit 
 const handleSaveEdit = (noteId) => {
