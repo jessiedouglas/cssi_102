@@ -31,7 +31,7 @@ Students will be using Git Github later in the course to collaborate on their fi
 
 2. From their Github profile, they should click the "Repositories" tab, then "New".
 
-3. Give students a moment to step through naming and creating a repository. Since this workflow is going to commit an EXISTING project, it's important that the "Intialize repository with a Readme" box is **deselected** (otherwise our push will be refused later). 
+3. Give students a moment to step through naming and creating a repository. Since this workflow is going to commit an EXISTING project, it's important that the "Intialize repository with a Readme" box is **deselected** (otherwise our push will be refused later). Once they've created their repository, Github will list the steps to initialize this Github project in their local repository. We'll go through those steps in detail below.
 
 4. In the command line, students should initialize a Git repository (or repo) for this project. Initializing a Git repo creates a `.git` file in the project. Though the `.git` file is typically hidden from us, unless we type a special `ls` command to view it, students should be aware that it is there, and it contains all of the information about their repository's history, making version control possible. First they'll want to make sure they are in their project directory, then type `git init`.
     * Please note that if students are working in Glitch, the command line / terminal can be accessed by clicking the "tools" button. 
@@ -46,6 +46,16 @@ Typing `git status` again will update them with which files have now been staged
 
 8. When students are happy with their changes and would like to capture them and save them, they can commit them.  Encourage students to think of committing to Git as creating snapshots in the chronology of a Git project. These snapshots capture some milestone or meaningful change in the project. Have students enter the command `git commit -m <message>` where `<message>` is a brief summary of the changes they've made to their project. Have students type `git status` again. They should now see that their working tree is clean, all changes they've made locally have been tracked and saved. 
 
-9. They have now saved their changes but only locally. To make their remote repository aware of the updates they've made locally, they must push these changes to their remote repository on Github. The command `git push origin master` will send these local changes to the remote repository hosted on Github. Have students refresh their Github repository to verify that their changes have been synced to their remote repository.
+9. In Github, the default branch has historically been called "master". Recently, in an effort to be more inclusive, Github has updated it's language to call the primary branch, or trunk, "main". Have students type this line in the terminal, to rename the default branch from "master" to "main".
+```bash
+git branch -M main
+```
+
+10. They have now saved their changes but only locally. In order to sync their local repository, with their remote repository they should add a remote origin with this line of code:
+```bash
+git remote add origin <remote url>
+```
+
+11. To make their remote repository aware of the updates they've made locally, they must push these changes to their remote repository on Github. The command `git push origin main` will send these local changes to the remote repository hosted on Github. Have students refresh their Github repository to verify that their changes have been synced to their remote repository.
 
 

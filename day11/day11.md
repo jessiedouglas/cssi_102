@@ -78,7 +78,7 @@ firebase.auth()
 
 9. Pause to discuss the asynchronous nature of sending requests over the web. Explain that we will be using `.then()` to write out how our app should respond after the request we made is complete. 
 
-10. Once a user has logged in, they should be redirected to a form to create a note. Have students add this line to their .`then()` method. 
+10. Once a user has logged in, they should be redirected to a form to create a note. Have students add this line to their .`then()` method. It uses the Javascript `window` object to navigate the user to the `noteForm.html` page.
 ```js
 window.location = 'noteForm.html';
 ```
@@ -139,14 +139,14 @@ const signIn = () => {
 
 15. Add the logic to write to the database to `writeNote.js`.
 
-16. For the optimal user experience, the user state should persist between all of the HTML pages. To do that we can trigger a function as soon as the page loads to see whether or not a user is logged in. Call the window.onload event to trigger some functionality as soon as the page loads:
+16. For the optimal user experience, the user state should persist between all of the HTML pages. To do that we can trigger a function as soon as the page loads to see whether or not a user is logged in. Once again we'll use the `window` object. We can call the `.onload()` event to trigger some functionality as soon as the page loads:
 ```js
   window.onload = event => {
 
   }
 ```
 
-17. The `.onAuthStateChanged()` method observes whether or not a user is signed in: if so, it makes the data for that user available to us, if not we can redirect that user back to the sign in page to log in. We are defining `googleUser` here, but want to make it global so that we can call it from another function that we'll write later on. For this reason, have students declare the `googleUser` variable by adding this code to the very top of their script file: `let googleUser;`
+17. The `.onAuthStateChanged()` method observes whether or not a user is signed in: if so, it makes the data for that user available to us, if not we can redirect that user back to the sign in page to log in. We are defining `googleUser` here, but want to make it global so that we can call it from another function that we'll write later on. For this reason, have students declare the `googleUser` variable by adding this code to the very top of their script file: `let googleUser;`.
 ```js
   firebase.auth().onAuthStateChanged(function(user) {
   if (user) {

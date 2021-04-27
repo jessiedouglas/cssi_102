@@ -46,7 +46,7 @@ window.onload = event => {
   });
 ```
 
-3. After verifying that our user is logged in, it's a good idea to store their id, so that we can later query for their data. Add this line at the end of the `if` block:
+3. After verifying that our user is logged in, it's a good idea to store their id, so that we can later query for their data.Yesterday we retrieved the user's ID from the user object that was returned to us after the user logged in. Today we'll do the same thing, and store that user ID in a variable: `googleUserId`. Add this line at the end of the `if` block:
 ```js
 const googleUserId = user.uid;
 ```
@@ -58,7 +58,7 @@ const getNotes = (userId) => {
 }
 ```
 
-5. Back in our `window.onload` event, call the `getNotes` function so that it will trigger after a user has been validated. Pass the user's ID into the function call so that it can be appended the query url. At this point our `window.onload` event should look like this:
+5. Back in our `window.onload` event, call the `getNotes` function so that it will trigger after a user has been validated. Pass the user's ID into the function call so that it can be appended the query url.  At this point our `window.onload` event should look like this:
 ```js
 window.onload = (event) => {
   // Use this to retain user state between html pages.
@@ -74,7 +74,7 @@ window.onload = (event) => {
 };
 ```
 
-6. Inside the `getNotes(userId)` function definition, start by connecting to the database and routing to the individual user's database resource:
+6. Inside the `getNotes(userId)` function definition, start by connecting to the database and routing to the individual user's database resource. Remind students that we used this path yesterday to write data to the Realtime Database. Instead of passing in the variable `userId`, we passed in `googleUser.uid`, but both variables point to the same data: the logged in user's unique id. Today we'll be referencing that same endpoint to retrieve our stored data.
 ```js
   const notesRef = firebase.database().ref(`users/${userId}`);
 ```

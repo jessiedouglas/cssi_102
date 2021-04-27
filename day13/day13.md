@@ -16,7 +16,7 @@
 
 ## What We're Building
 
-Today students will continue building out their notes app. We will focus on editing and deleting data in our realtime database. 
+Today students will continue building out their notes app. We will focus on editing and deleting data in our realtime database. Adding this functionality will help get students comfortable with the four main HTTP requests, and help solidify students understanding of data exchange on the web. By building the functionality to handle reading, writing, updating, and deleting data, students will also learn the core functionality needed to design a complete and intuitive user-experience. 
 
 ## Starting Code
 
@@ -24,7 +24,7 @@ The starter code for today can be found in `day13/day13_starter/firebaseNotes`.
 
 ## Stepped Solution
 
-1. Update the `createCard()` function to accept both a note and the noteID.
+1. In `viewNotes.js`, update the `createCard()` function to accept both a note and the noteID.
 
 2. Update the footer of the cards to add a delete button that has an event handler. 
 ```js
@@ -38,7 +38,7 @@ const deleteNote = (noteId) => {
 }
 ```
 
-4. Deleting a note in Firebase RTDB is simple. Just reference that record in the database and call `.remove()` on it. Add this code inside the `deleteNote()` function:
+4. Deleting a note in Firebase RTDB is simple. Just reference that record in the database and call `.remove()` on it. The first part of the path, `users/${googleUserId}`, should be familiar to students by now. We've used this path on day 11 and 13 to write data to our endpoint, and retrieve data from that same endpoint. Referencing this endpoint will return to us **all** of the notes that were created by a user. To access a specific note created by the user, we'll just append the note's unique key to the path. Add this code inside the `deleteNote()` function:
 ```js
 firebase.database().ref(`users/${googleUserId}/${noteId}`).remove();
 ```
